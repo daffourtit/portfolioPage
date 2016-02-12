@@ -1,0 +1,134 @@
+/*
+    My Portfolio
+    Author: Daniel Affourtit
+    Version: 0.0.1
+*/
+/* BASE - base  styles, variables, mixins, etc */
+@font-face {
+  font-family: "fabrica";
+  src: url("../fonts/fabrica/fabrica-webfont.eot");
+  src: url("../fonts/fabrica/fabrica-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fabrica/fabrica-webfont.woff2") format("woff2"), url("../fonts/fabrica/fabrica-webfont.woff") format("woff"), url("../fonts/fabrica/fabrica-webfont.ttf") format("truetype"), url("../fonts/fabrica/fabrica-webfont.svg#fabricaregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Manifesto";
+  src: url("../fonts/manifesto/manifesto-webfont.eot");
+  src: url("../fonts/manifesto/manifesto-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/manifesto/manifesto-webfont.woff2") format("woff2"), url("../fonts/manifesto/manifesto-webfont.woff") format("woff"), url("../fonts/manifesto/manifesto-webfont.ttf") format("truetype"), url("../fonts/manifesto/manifesto-webfont.svg#manifestoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "minimal";
+  src: url("../fonts/minimal/minimal-webfont.eot");
+  src: url("../fonts/minimal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/minimal/minimal-webfont.woff2") format("woff2"), url("../fonts/minimal/minimal-webfont.woff") format("woff"), url("../fonts/minimal/minimal-webfont.ttf") format("truetype"), url("../fonts/minimal/minimal-webfont.svg#minimalregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Azedo-Light";
+  src: url("../fonts/Azedo-Light/Azedo-Light.eot");
+  src: url("../fonts/Azedo-Light/Azedo-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Azedo-Light/Azedo-Light.woff2") format("woff2"), url("../fonts/Azedo-Light/Azedo-Light.woff") format("woff"), url("../fonts/Azedo-Light/Azedo-Light.ttf") format("truetype"), url("../fonts/Azedo-Light/Azedo-Light.svg#Azedo-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-hairline/Montserrat-hairline-webfont.eot");
+  src: url("../fonts/Montserrat-hairline/Montserrat-hairline-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-hairline/Montserrat-hairline-webfont.woff2") format("woff2"), url("../fonts/Montserrat-hairline/Montserrat-hairline-webfont.woff") format("woff"), url("../fonts/Montserrat-hairline/Montserrat-hairline-webfont.ttf") format("truetype"), url("../fonts/Montserrat-hairline/Montserrat-hairline-webfont.svg#Montserrat-hairline") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+img {
+  max-width: 100%; }
+
+body {
+  line-height: 1.25;
+  font-family: "fabrica";
+  background-color: #F8F8ff;
+  color: #050205; }
+
+ol, ul {
+  list-style: none; }
+
+/* Layouts */
+.accent {
+  text-align: right;
+  font-family: "Azedo-Light";
+  height: 25px; }
+  .accent h3 {
+    font-size: 2rem;
+    margin: 1.65rem 0 0 0; }
+  .accent .icons {
+    margin-top: 1.5rem; }
+    .accent .icons li {
+      border-radius: 1.25rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      border: 3px solid #eaebec;
+      display: inline-block;
+      /*margin: 1.25rem 5px;*/
+      text-align: center;
+      padding: .6rem 0; }
+      .accent .icons li a {
+        text-decoration: none;
+        color: #050205; }
+
+hr {
+  margin: 1.25rem 3rem 1.5rem 3rem;
+  border-bottom: 1px solid #eaebec; }
+
+@media screen and (max-width: 365px) {
+  .accent h3 {
+    margin-top: 1.5rem;
+    display: none; } }
+.title {
+  margin-bottom: .5rem;
+  text-align: center; }
+  .title .headline {
+    font-family: "Manifesto";
+    font-size: 3em; }
+  .title .byline {
+    font-family: "Azedo-Light";
+    font-size: 1.75rem;
+    margin-top: .5rem;
+    color: #7c9fbf;
+    letter-spacing: 0rem; }
+
+@media screen and (min-width: 700px) {
+  .title {
+    text-align: left; } }
+.nav-Content-Combo .left-nav {
+  font-family: "minimal";
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0; }
+.nav-Content-Combo .right-content {
+  display: none; }
+
+@media screen and (min-width: 550px) {
+  .nav-Content-Combo .right-content {
+    margin-top: 1.5rem;
+    display: block; } }
+
+/*# sourceMappingURL=customstyles.css.map */

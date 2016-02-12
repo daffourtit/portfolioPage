@@ -1,0 +1,39 @@
+.accent {
+    text-align: right;
+    font-family: $font-accent;
+    height: 25px;
+
+    h3 {
+        font-size: 2rem;
+        margin: 1.65rem 0 0 0;
+    }
+    .icons {
+        margin-top: 1.5rem;
+        li{
+            border-radius: 1.25rem;
+            width: 2.75rem;
+            height: 2.75rem;
+            border: 3px solid #eaebec;
+            display: inline-block;
+            /*margin: 1.25rem 5px;*/
+            text-align: center;
+            padding: .6rem 0;
+            a {
+                text-decoration: none;
+                color: $font-color1;
+            }
+        }
+    }
+}
+
+hr {
+    margin: 1.25rem 3rem 1.5rem 3rem;
+    border-bottom: 1px solid #eaebec;
+}
+
+@media screen and (max-width: 365px) {
+       .accent h3{
+            margin-top: 1.5rem;
+            display: none;
+        }
+    }

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Azedo-Light';
+  src: url('fonts/Azedo-Light/Azedo-Light.eot');
+  src: url('fonts/Azedo-Light/Azedo-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Azedo-Light/Azedo-Light.woff2') format('woff2'),
+       url('fonts/Azedo-Light/Azedo-Light.woff') format('woff'),
+       url('fonts/Azedo-Light/Azedo-Light.ttf') format('truetype'),
+       url('fonts/Azedo-Light/Azedo-Light.svg#Azedo-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

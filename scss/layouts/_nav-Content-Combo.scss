@@ -1,0 +1,18 @@
+.nav-Content-Combo {
+    .left-nav {
+    font-family: $font-nav;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    }
+    .right-content {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .nav-Content-Combo .right-content{
+            margin-top: 1.5rem;
+            display: block;
+        }
+    }

@@ -1,0 +1,23 @@
+.title {
+    margin-bottom: .5rem;
+    text-align:center;
+    .headline {
+        font-family: $font-title;
+
+        font-size: 3em;
+    }
+    .byline {
+        font-family: $font-accent;
+        font-size: 1.75rem;
+        margin-top: .5rem;
+        color: $font-color2;
+        letter-spacing: 0rem;
+
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .title{
+            text-align: left;
+        }
+    }
